@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #7b3f00;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #958649, #d3993c);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: #ffcc00;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Product Section */
+        .products {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);;
+            gap: 20px;
+        }
+
+        .card {
+            background: #F5F5DC;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #2a5298;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: #1e3c72;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background: #2a5298;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>MyShop</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h2>🔥 Big Sale Today!</h2>
+        <p>Minimum RM1.50 can get you favorite</p>
+        <br>
+        <p>We only accept cash and carry for checking product status</p>
+        <br>
+        <p>If you want to buy, pls contact or drop a message to 
+            0132546001
+        </p>
+        <button>Shop Now</button>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+
+        <div class="card">
+            <img src="images/image23.jpeg" alt="Product">
+            <h3>table set</h3>
+            <p class="price">RM 20</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image2.jpeg" alt="Product">
+            <h3>Wooden Rack 2</h3>
+            <p class="price">SOLD</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image3.jpeg" alt="Product">
+            <h3>Green Shelter</h3>
+            <p class="price">RM 15</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image4.jpeg" alt="Product">
+            <h3>Sofa with a pillow</h3>
+            <p class="price">RM150 (free you pillow)</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image5.jpeg" alt="Product">
+            <h3>Iron rack</h3>
+            <p class="price">SOLD</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image6.jpeg" alt="Product">
+            <h3>Lamp with romantic feel</h3>
+            <p class="price">RM 25</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image7.jpeg" alt="Product">
+            <h3>Chinese drum</h3>
+            <p class="price">RM 12</p>
+
+        </div>
+
+        <div class="card">
+            <img src="images/image8.jpeg" alt="Product">
+            <h3>A bundle of classic</h3>
+            <p class="price">RM 70 (Rack:65. Draw:8)</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image10.jpeg" alt="Product">
+            <h3>Boat Draw</h3>
+            <p class="price">RM 12</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image19.jpeg" alt="Product">
+            <h3>Deer Draw</h3>
+            <p class="price">RM 20</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image11.jpeg" alt="Product">
+            <h3>Chinese feel bamboo with vase</h3>
+            <p class="price">RM 20</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image12.jpeg" alt="Product">
+            <h3>Welcome</h3>
+            <p class="price">RM 2</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image13.jpeg" alt="Product">
+            <h3>Small fake plant</h3>
+            <p class="price">RM 2</p>
+        </div>
+        
+        <div class="card">
+            <img src="images/image15.jpeg" alt="Product">
+            <h3>The bike</h3>
+            <p class="price">RM 10</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image16.jpeg" alt="Product">
+            <h3>guan yu</h3>
+            <p class="price">RM 10</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image17.jpeg" alt="Product">
+            <h3>piggie (i am broke so i where a cloth)</h3>
+            <p class="price">RM 2</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image18.jpeg" alt="Product">
+            <h3>glasses rack</h3>
+            <p class="price">SOLD</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="images/image21.jpeg" alt="Product">
+            <h3>jing si shu xuan</h3>
+            <p class="price">RM 40</p>
+        </div>
+        <div class="card">
+            <img src="images/image22.jpeg" alt="Product">
+            <h3>i am a small vase</h3>
+            <p class="price">RM 5</p>
+        </div>
+        
+
+        <div class="card">
+            <img src="images/image24.jpeg" alt="Product">
+            <h3>Comic </h3>
+            <p class="price">RM 2 (2 for RM 3)</p>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
